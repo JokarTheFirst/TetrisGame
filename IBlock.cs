@@ -14,6 +14,7 @@ namespace TetrisGame
             new Position[] { new(1,0), new(1,1), new(1,2), new(1,3) },
             new Position[] { new(1,0), new(1,1), new(1,2), new(1,3) },
             new Position[] { new(1,0), new(1,1), new(1,2), new(1,3) }
+            
         };
     }
 }
