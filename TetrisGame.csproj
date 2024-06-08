@@ -111,7 +111,6 @@
     <Resource Include="Assets\Background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Background.png" />
     <Resource Include="Assets\BlockEmpty.png" />
     <Resource Include="Assets\Blue.png" />
     <Resource Include="Assets\Green.png" />
