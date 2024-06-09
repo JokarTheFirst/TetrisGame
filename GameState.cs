@@ -11,7 +11,19 @@
             {
                 currentBlock = value;
                 currentBlock.Reset();
+
+                for (int i = 0; i < 2; i++)
+                {
+                    currentBlock.Move(1, 0);
+
+                    if (!BlockFits())
+                    {
+                        currentBlock.Move(-1,0);
+                    }
+                }
             }
+
+
         }
 
         public GameGrid GameGrid { get; }
