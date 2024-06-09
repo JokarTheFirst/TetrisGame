@@ -47,6 +47,9 @@ namespace TetrisGame
         };
 
         private readonly Image[,] imageControls;
+        private readonly int maxDelay = 1000;
+        private readonly int minDelay = 75;
+        private readonly int delayIncrease = 25;
 
         private GameState gameState = new GameState();
         
@@ -88,6 +91,7 @@ namespace TetrisGame
                 for (int c = 0;c < grid.Columns; c++)
                 {
                     int id = grid[r, c];
+                    imageControls[r, c].Opacity = 1;
                     imageControls[r, c].Source = tileImages[id];
                 }
             }
@@ -103,6 +107,7 @@ namespace TetrisGame
         {
             foreach (Position p in block.TilePositions())
             {
+                imageControls[p.Row, p.Column].Opacity = 1;
                 imageControls[p.Row, p.Column].Source = tileImages[block.Id];
             }
         }
@@ -119,9 +124,21 @@ namespace TetrisGame
             }
         }
 
+        private void DrawGhostBlock (Block block)
+        {
+            int dropDistance = gameState.BlockDropDistance();
+
+            foreach (Position p in block.TilePositions())
+            {
+                imageControls[p.Row + dropDistance, p.Column].Opacity = 0.25;
+                imageControls[p.Row + dropDistance, p.Column].Source = tileImages[block.Id];
+            }
+        }
+
         private void Draw(GameState gameState)
         {
             DrawGrid(gameState.GameGrid);
+            DrawGhostBlock(gameState.CurrentBlock);
             DrawBlock(gameState.CurrentBlock);
             DrawNexBlock(gameState.BlockQueue);
             DrawHeldBlock(gameState.HeldBlock);
@@ -134,7 +151,8 @@ namespace TetrisGame
 
             while (!gameState.GameOver)
             {
-                await Task.Delay(500);
+                int delay = Math.Max(minDelay, maxDelay - (gameState.Score * delayIncrease));
+                await Task.Delay(delay);
                 gameState.MoveBlockDown();
                 Draw(gameState);
             }
@@ -166,7 +184,7 @@ namespace TetrisGame
                 case Key.Q:
                     gameState.RotateBlockCCW();
                     break;
-                case Key.LeftShift:
+                case Key.F:
                     gameState.HoldBlock();
                     break;
                 case Key.Space:
