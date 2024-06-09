@@ -30,7 +30,7 @@
                   Grid.Column="1"
                  Margin="0,0,0,20">
             <Canvas x:Name="GameCanvas"
-                Background="#101010"
+                Background="#FF1D1D1D"
                 Width="250"
                 Height="500"
                 ClipToBounds="True"
@@ -82,10 +82,10 @@
                            FontSize="36"
                            TextAlignment="Center"/>
                 <Button Content="Play Again"
-                        Background="LightGreen"
-                        Margin="0,20,0,0"
-                        Padding="5"
-                        Click="PlayAgain_Click"/>
+                           Background="LightGreen"
+                           Margin="0,20,0,0"
+                           Padding="5"
+                           Click="PlayAgain_Click"/>
             </StackPanel>
         </Grid>
     </Grid>
