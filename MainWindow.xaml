@@ -81,7 +81,7 @@
                            Text="Score: "
                            FontSize="36"
                            TextAlignment="Center"/>
-                <Button Content="Restart"
+                <Button Content="Play Again"
                         Background="LightGreen"
                         Margin="0,20,0,0"
                         Padding="5"
