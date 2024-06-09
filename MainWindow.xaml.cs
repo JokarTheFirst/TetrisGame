@@ -63,9 +63,20 @@ namespace TetrisGame
             {
                 for (int c = 0; c < grid.Columns; c++)
                 {
+                    Image imageControl = new Image
+                    {
+                        Width = cellSize,
+                        Height = cellSize,
+                    };
 
+                    Canvas.SetTop(imageControl, (r - 2) * cellSize);
+                    Canvas.SetLeft(imageControl, c*cellSize);
+                    GameCanvas.Children.Add(imageControl);
+                    imageControls[r,c] = imageControl;
                 }
             }
+
+            return imageControls;
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
