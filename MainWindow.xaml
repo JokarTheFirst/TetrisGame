@@ -32,7 +32,7 @@
             <Canvas x:Name="GameCanvas"
                 Background="#FF1D1D1D"
                 Width="250"
-                Height="500"
+                Height="510"
                 ClipToBounds="True"
                 Loaded="GameCanvas_Loaded"/>
         </Viewbox>
