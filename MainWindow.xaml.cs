@@ -92,6 +92,12 @@ namespace TetrisGame
             }
         }
 
+        private void DrawNexBlock(BlockQueue blockQueue)
+        {
+            Block next = blockQueue.NextBlock;
+            NextImage.Source = blockImages[next.Id];
+        }
+
         private void DrawBlock(Block block)
         {
             foreach (Position p in block.TilePositions())
@@ -104,6 +110,7 @@ namespace TetrisGame
         {
             DrawGrid(gameState.GameGrid);
             DrawBlock(gameState.CurrentBlock);
+            DrawNexBlock(gameState.BlockQueue);
         }
 
         private async Task GameLoop()
