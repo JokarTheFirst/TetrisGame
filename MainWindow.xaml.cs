@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -165,8 +166,11 @@ namespace TetrisGame
                 case Key.Q:
                     gameState.RotateBlockCCW();
                     break;
-                case Key.F:
+                case Key.LeftShift:
                     gameState.HoldBlock();
+                    break;
+                case Key.Space:
+                    gameState.DropBlock();
                     break;
                 default:
                     return;
