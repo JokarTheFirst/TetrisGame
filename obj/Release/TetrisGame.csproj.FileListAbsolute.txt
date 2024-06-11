@@ -1,0 +1,15 @@
+E:\Utilities\Visual Studio\projects\TetrisGame\bin\Release\TetrisGame.exe.config
+E:\Utilities\Visual Studio\projects\TetrisGame\bin\Release\TetrisGame.exe
+E:\Utilities\Visual Studio\projects\TetrisGame\bin\Release\TetrisGame.pdb
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame.csproj.AssemblyReference.cache
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\MainWindow.g.cs
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\App.g.cs
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame_MarkupCompile.cache
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame_MarkupCompile.lref
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\MainWindow.baml
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame.g.resources
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame.Properties.Resources.resources
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame.csproj.GenerateResource.cache
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame.csproj.CoreCompileInputs.cache
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame.exe
+E:\Utilities\Visual Studio\projects\TetrisGame\obj\Release\TetrisGame.pdb
