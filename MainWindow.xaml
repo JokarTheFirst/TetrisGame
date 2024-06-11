@@ -79,7 +79,7 @@
                       TextAlignment="Center" VerticalAlignment="Top" FontSize="24"/>
             <TextBlock Text="F - сохранить блок"
            TextAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
-            <TextBlock Text="Q и R - вертеть блок"
+            <TextBlock Text="Q и E - вертеть блок"
             TextAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
         </StackPanel>
 
