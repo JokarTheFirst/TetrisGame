@@ -66,6 +66,22 @@
                    Margin="20"
                    Width="125"/>
         </StackPanel>
+        
+        
+        <StackPanel Grid.Row="1"
+            Grid.Column="0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left">
+            <TextBlock Text=" ⬅⬇⮕ - двигать блоки"
+            TextAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+            <TextBlock Text="Пробел - бросить блок"
+                      Margin="0,0,0,0"
+                      TextAlignment="Center" VerticalAlignment="Top" FontSize="24"/>
+            <TextBlock Text="F - сохранить блок"
+           TextAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+            <TextBlock Text="Q и R - вертеть блок"
+            TextAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        </StackPanel>
 
         <Grid x:Name="GameOverMenu"
               Background="#cc000000"
